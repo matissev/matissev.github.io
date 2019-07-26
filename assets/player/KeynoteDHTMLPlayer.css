@@ -8,6 +8,7 @@
 
 body
 {
+	background-color: #fff !important;
     overflow: hidden;
     margin: 0;
     -webkit-user-select: none;
