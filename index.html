@@ -1,18 +1,27 @@
-<html>
-
-<script type="text/javascript">
-
-function detectBrowser()
-{
-    var slashIndex = window.location.href.lastIndexOf("/");
-    var cropped = window.location.href.slice(0,slashIndex+1);
-
-    window.location.replace(cropped + "assets/player/KeynoteDHTMLPlayer.html");
-}
-
-</script>
-
-<body bgcolor="black" onload="detectBrowser()">
-</body>
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Matisse Vrignaud | Écrans sonores</title>
+		<meta name="viewport", content="width=device-width, initial-scale=1.0">
+		<style>
+			.content {
+				opacity: 0;
+			}
+		</style>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<section class="container">
+            <div class="colorsection"></div>
+            <section class="content">
+                <h1>
+                    Matisse Vrignaud
+                    <span>compositeur & designer</span>
+                </h1>
+                <h2>Musique générative, Lieu Unique</h2>
+                <iframe src="https://www.youtube.com/embed/PEC0ZxaVa-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+		</section>
+	</body>
 </html>

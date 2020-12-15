@@ -1,0 +1,108 @@
+
+@font-face {
+    font-family: 'Basier Circle';
+    src: url("./BasierCircle-Regular.woff2") format('woff2'),
+        url("./BasierCircle-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Basier Circle';
+    src: url("./BasierCircle-Italic.woff2") format('woff2'),
+        url("./BasierCircle-Italic.woff") format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Basier Circle';
+	src: url("./BasierCircle-Bold.woff2") format('woff2'),
+		url("./BasierCircle-Bold.woff") format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+body {
+	margin: 0;
+	font-family: Basier Circle, sans-serif;
+	border: 0;
+	padding-bottom: 100px;
+}
+
+header {
+	height: 85vh;
+	animation: fadein 0.5s ease-out;
+}
+
+header:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+h1 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+h1 span {
+	color: #707070;
+	float: right;
+}
+
+h2 {
+	font-size: 1rem;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	font-weight: normal;
+}
+
+.heading-image {
+	display: block;
+	width: 45vw;
+	float: right;
+}
+
+.container {
+	box-sizing: border-box;
+	padding: 5vw;
+}
+
+.colorsection {
+	position: fixed;
+	height: 100vh;
+	width: 50vw;
+	top: 0;
+	right: 0;
+	background: #fac39f;
+}
+
+.content {
+	width: 35vw;
+	opacity: 0;
+	animation: showup 0.5s ease-out 0.8s forwards;
+}
+
+iframe {
+	margin-top: 10px;
+	width: 100%;
+	height: 19.7vw;
+	display: block;
+	height: 400px;
+}
+
+@keyframes fadein {
+	0% { opacity: 0; transform: translate3d(0,20px,0); }
+	100% { opacity: 1; transform: translate3d(0,0px,0); }
+}
+
+@keyframes showup {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
